@@ -3,7 +3,7 @@
   "pr_date": "2020-12-25",
   "indicators": {
     "basic_reproduction_number": {
-      "color": "red",
+      "color": "green",
       "value": 1.005.546
     },
     "incidence_new_infections": {
@@ -16,7 +16,7 @@
     },
     "change_incidence": {
       "color": "green",
-      "value": 943637
+      "value": -29
     }
   }
 }
