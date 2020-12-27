@@ -17,7 +17,7 @@ widget.url = "https://covid19.minsa.gob.pe/sala_situacional.asp";
 
 let apiResponse = await loadItems();
 
-let header = widget.addText("🚦Covid-19 Berlin".toUpperCase());
+let header = widget.addText("🚦Covid-19 Perú".toUpperCase());
 header.font = Font.mediumSystemFont(10);
 
 widget.addSpacer(16);
@@ -58,11 +58,11 @@ async function loadItems() {
     "https://raw.githubusercontent.com/Derakz/corona/main/peru_corona_traffic_light.latest.json";
   let req = new Request(url);
   let json = await req.loadJSON();
-  json.indicators.basic_reproduction_number.shortDescription = "R-Valor";
-  json.indicators.incidence_new_infections.shortDescription = "Incidencia";
-  json.indicators.icu_occupancy_rate.shortDescription = "ITS-Asignación";
-  json.indicators.basic_reproduction_number.footnote = "(4 Tage)";
-  json.indicators.incidence_new_infections.footnote = "(7 Tage)";
+  json.indicators.basic_reproduction_number.shortDescription = "Casos";
+  json.indicators.incidence_new_infections.shortDescription = "Fallecidos";
+  json.indicators.icu_occupancy_rate.shortDescription = "Letalidad";
+  json.indicators.basic_reproduction_number.footnote = "Totales";
+  json.indicators.incidence_new_infections.footnote = "Totales";
   json.indicators.icu_occupancy_rate.footnote = "";
   json.indicators.basic_reproduction_number.stringValue = json.indicators.basic_reproduction_number.value.toString();
   json.indicators.incidence_new_infections.stringValue = json.indicators.incidence_new_infections.value.toString();
