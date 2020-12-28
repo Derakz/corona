@@ -4,11 +4,11 @@
   "indicators": {
     "basic_reproduction_number": {
       "color": "green",
-      "value": 1005546
+      "value": 1007657 
     },
     "incidence_new_infections": {
       "color": "red",
-      "value": 37368
+      "value": 37474
     },
     "icu_occupancy_rate": {
       "color": "red",
